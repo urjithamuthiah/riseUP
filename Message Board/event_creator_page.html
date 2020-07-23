@@ -1,0 +1,45 @@
+<!--HTML for page that allows organizations to create/publish an event-->
+<!DOCTYPE>
+<html>
+    <head>
+        <link rel="stylesheet" href="event_creator_page.css">
+        <title>Create an Event</title>
+    </head>
+
+    <body>
+        <!--Section for user to input header image-->
+        <div class ="header-image" style="z-index:1">
+            <form action="/action_page.php">
+                <label for="header-img"><br><br>Insert Image Here:</label>
+                <input type="file" id="header-img" name="header-img" accept="image/*">
+                <input type="Submit" id="header-upload">
+              </form>
+        </div>
+
+        <!--Section for user to input theor organization name in the header-->
+        <div class= "org_name_header" style="z-index:1">
+            <form class = "header_name">
+                <input type="text" id="headerName" name="headerName" value="Insert Org Name Here">
+            </form>
+        </div>
+
+        <!--Section for user to input event info (left side fof page)-->
+        <div class="event_info">
+            <form class = "event_info_input">
+                <input type="text" id="eventName" name="eventName" value="Event Name:">
+                <input type="text" id="eventInfo" name="eventInfo" value="Event Description:">
+            </form>
+        </div>
+
+        <div class=eventTypes>
+        <input style="z-index:-2" type="radio" name="Button" class="ButtonState" checked id="Button1" value="1"/>
+	    <label style="z-index:-2" class="Button" for="Button1">B.L.M.</label>
+	    <input type="radio" name="Button" class="ButtonState" id="Button2" value="2"/>
+	    <label class="Button" for="Button2">L.G.B.T.Q.</label>
+	    <input type="radio" name="Button" class="ButtonState" id="Button3" value="3"/>
+	    <label class="Button" for="Button3">W.E.</label>
+        </div>
+	
+
+    </body>
+</html>
